@@ -11,10 +11,9 @@ Play it on a phone turned sideways, or on a computer with WASD and Space.
 | `index.html` | The page. Includes the security policy. |
 | `style.css` | Look of the menus and on-screen counters. |
 | `game.js` | The game itself. |
-| `vendor/three.min.js` | Three.js r128, the 3D engine (MIT license, see `vendor/LICENSE-three.txt`). |
-| `fonts/` | Lilita One and VT323 (SIL Open Font License, see the `OFL-*.txt` files). |
+| `three.min.js` | Three.js r128, the 3D engine (MIT license, see `LICENSE-three.txt`). |
+| `*.ttf` | Lilita One and VT323 fonts (SIL Open Font License, see the `OFL-*.txt` files). |
 | `icon.svg` | The little pumpkin in the browser tab. |
-| `.nojekyll` | Tells GitHub Pages to serve the files as-is. |
 
 ## Why it's safe to share
 
@@ -28,7 +27,7 @@ Play it on a phone turned sideways, or on a computer with WASD and Space.
 
 1. Sign in to GitHub. Make sure **two-factor authentication** is on (Settings → Password and authentication).
 2. Create a new **public** repository, for example `trick-or-treat-97`. Leave it empty.
-3. Upload every file in this folder, including the `vendor` and `fonts` folders and `.nojekyll`. Keep the folder structure the same.
+3. Click **Add file → Upload files**, select every file in this folder (there are no subfolders), and commit.
 4. In the repo, go to **Settings → Pages**. Under "Build and deployment," set Source to **Deploy from a branch**, branch **main**, folder **/ (root)**, then Save.
 5. Wait a minute or two. Your game will be at `https://YOUR-USERNAME.github.io/trick-or-treat-97/`.
 6. On the same Pages screen, check **Enforce HTTPS**.

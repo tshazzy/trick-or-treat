@@ -1,5 +1,5 @@
-@font-face{font-family:"Lilita One";src:url("fonts/LilitaOne-Regular.ttf") format("truetype");font-display:swap}
-@font-face{font-family:"VT323";src:url("fonts/VT323-Regular.ttf") format("truetype");font-display:swap}
+@font-face{font-family:"Lilita One";src:url("LilitaOne-Regular.ttf") format("truetype");font-display:swap}
+@font-face{font-family:"VT323";src:url("VT323-Regular.ttf") format("truetype");font-display:swap}
 *,*::before,*::after{box-sizing:border-box}
 body{font:14px system-ui,sans-serif}
 /* Single committed look: an early-2000s console screen at dusk. Full-bleed 3D canvas, chunky HUD floating over it. */
