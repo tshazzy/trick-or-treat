@@ -439,7 +439,7 @@ function buildHouse(h,hi){
     if(h.porch==='portico'){for(const s of [-1,1])scyl(t,M.trim,dx+s*(hw-0.25),FL,FL+2.6,zf+dp-0.25,0.12,14);
       roofMesh(t,roofGeo(dp+0.6,hw*2+0.5,1.0,(dp+0.6)/2,hw),[roofMat,trimD],dx,FL+2.6,zf+(dp+0.6)/2-0.05,true);
       sbox(t,M.trim,dx-hw-0.25,dx+hw+0.25,FL+2.45,FL+2.62,zf,zf+dp+0.3);solid(t.box(dx-hw-0.25,dx+hw+0.25,FL+2.45,FL+2.9,zf,zf+dp+0.3));
-      token(t,dx,FL+3.6,zf+dp*0.6);}
+      token(t,dx,FL+1.4,zf+dp*0.6);}
     else{roofMesh(t,roofGeo(1.4,2.4,0.7,0.7,1.1),[roofMat,trimD],dx,FL+2.4,zf+0.6,true);
       for(const s of [-1,1])sbox(t,M.iron,dx+s*hw-0.03,dx+s*hw+0.03,FL,FL+0.9,zf+0.1,zf+dp);token(t,dx-1.6,FL+1.4,zf+1.2);}}
   else if(h.porch==='wrap'){const x0=main.x0-0.3,x1=main.x1+0.3,dp=2.3;sbox(t,M.wood,x0,x1,-1,FL,zf,zf+dp,1);solid(t.box(x0,x1,-1,FL,zf,zf+dp));step(dx,zf+dp,0.9);
@@ -491,7 +491,7 @@ HOUSES.forEach(buildHouse);
   const bY=gh(48,19);sbox(t,M.wood,47.1,48.9,bY+0.45,bY+0.55,18.75,19.25,1);sbox(t,M.wood,47.1,48.9,bY+0.55,bY+1.0,19.2,19.3,1);solid(WT.box(47.1,48.9,bY-0.3,bY+0.55,18.75,19.25));solid(WT.box(47.1,48.9,bY-0.3,bY+1.0,19.15,19.3));
   for(const x of [47.2,48.8])sbox(t,M.metal,x-0.05,x+0.05,bY-0.2,bY+0.45,18.8,19.2);jack(t,48.4,bY+0.82,19,0.28);tokenG(t,47.6,1.35,19);
   sbox(t,M.wood,56.92,57.08,gh(57,18)-0.3,gh(57,18)+0.9,17.92,18.08);splane(t,CUT.owl,57,gh(57,18)+1.3,18,0.7,0.85,Math.PI);tokenG(t,57,2.3,18.2);
-  const sx=58,sz=29;crateStack(t,sx-1.8,sz,1);crateStack(t,sx-0.9,sz,2);crateStack(t,sx,sz,3);tokenG(t,sx,3.6,sz);
+  const sx=58,sz=29;crateStack(t,sx-1.8,sz,1);crateStack(t,sx-0.9,sz,2);crateStack(t,sx,sz,3);tokenG(t,sx,2.9,sz);
   crateStack(t,48,31,1);crateStack(t,55,22,1);
   splane(t,CUT.cat,50,gh(50,22)+0.4,22,1.0,0.8,Math.PI);splane(t,CUT.skeleton,59.5,gh(59.5,21)+0.78,21,0.85,1.55,Math.PI);
   const SW=HT({x:0,z:0,s:1,pad:0});blowGhost(SW,46,22);blowCorn(SW,60,24);
