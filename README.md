@@ -26,10 +26,10 @@ Play it on a phone turned sideways, or on a computer with WASD and Space.
 ## Putting it on GitHub Pages (free)
 
 1. Sign in to GitHub. Make sure **two-factor authentication** is on (Settings → Password and authentication).
-2. Create a new **public** repository, for example `trick-or-treat-97`. Leave it empty.
+2. Create a new **public** repository, for example `trick-or-treat`. Leave it empty.
 3. Click **Add file → Upload files**, select every file in this folder (there are no subfolders), and commit.
 4. In the repo, go to **Settings → Pages**. Under "Build and deployment," set Source to **Deploy from a branch**, branch **main**, folder **/ (root)**, then Save.
-5. Wait a minute or two. Your game will be at `https://YOUR-USERNAME.github.io/trick-or-treat-97/`.
+5. Wait a minute or two. Your game will be at `https://YOUR-USERNAME.github.io/trick-or-treat/`.
 6. On the same Pages screen, check **Enforce HTTPS**.
 
 ## Optional: your own domain
